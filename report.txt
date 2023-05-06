@@ -1,0 +1,39 @@
+Regeisters used
+Ax
+Bx
+Cx
+Dx
+Si
+Di
+
+
+
+Interrupts used
+
+Int 21h
+This interupt is used For taking input from keybord. Everytime user takes input from keyboard or outputs on the screen this input is used. Basic Interupt used in assembly language.
+
+
+Int 10h
+Graphics interrupt
+This interuput is related to graphics and pixels. Everytime we open For clearing scree, moving pixels, using colours, backgroud colours, video modes, basically everything related to pixels and graphics.
+
+
+Int 33h
+Mosue interrupt
+This interupt is used For taking input from mouse, whenever we are using mouse, reading button clicked from mouse, or which button is pressed, or how many buttons are pressed are or when a button is clicked, we use thsi interupt.
+
+
+Our code starts by making 5 types of different candies and designng a colour bomb.
+Next we create a 7x7 grid by drawing pixel lines to make boxed grid in which our candies are populated.
+Next is populating candies in it using an array storing the candies to be populated according to the array we have given.
+Next we draw the level screen.
+Use mouse and delay function to take input of first click and second click.
+Next we Convert the cordinates to array indexes.
+We use these indexes to validate moves, as scuh we are moving up,down,left,right and perfectly.
+if the move is valid check for combos on the grid, for horizontally and vertically a total of 18 combos exists.
+if a move is valid and a combo exists clear those candies and replace with new candies.
+if a combo is made and candies explode, player is awarded points on base of the shape and colour of candy exploded.
+if the player achive target score within 15 moves move to next level else ask him if he wants to play again and the game starts over from level 1.
+At the end we display player scores at the end of the game on the final screen.
+Finally we store all player data into the files for every player.
